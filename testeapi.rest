@@ -1,0 +1,18 @@
+### SEND
+POST http://localhost:8080/api/queue/send
+Content-Type: application/json
+
+"{{$datetime iso8601}} nathan"
+### SEND
+POST http://localhost:8080/api/topic/send
+Content-Type: application/json
+
+"{{$datetime iso8601}} nathan"
+
+
+
+### RECIVE
+GET http://localhost:8080/api/receber
+Content-Type: application/json
+
+
