@@ -27,7 +27,7 @@ public class HomeControllerAPI {
     private ServiceBusSenderClient queueSenderClient;
 
 
-    @Autowired
+    @Autowired()
     private ServiceBusProcessorClient processorClient;
     
     @PostMapping("/topic/enviar")
