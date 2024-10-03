@@ -13,6 +13,16 @@
         <module>eventos</module>
         <module>microkernel-kernel</module>
         <module>microkernel-plugin</module>
+        <module>microkernel-interface</module>
     </modules>
 
+    
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>

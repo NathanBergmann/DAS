@@ -2,8 +2,9 @@ package br.univille.microkernel_kernel.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import br.univille.microkernel_kernel.service.DefaultService;
+import br.univille.microkernel_interface.service.DefaultService;
 
+import java.util.Arrays;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class HomeControllerAPI {
         if(services == null){
             return new ResponseEntity<String>("Services is null", HttpStatusCode.valueOf(500));
         }
-        serviceList = services.keySet().toArray().toString();
+        serviceList = Arrays.toString(services.keySet().toArray());
         return new ResponseEntity<String>(serviceList, HttpStatus.OK);
     }
         
